@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>CSS Selectors</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="w3.css">
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin-right:10px"><strong>
+        </strong>
+        <div><strong> </strong>
+          <div id="main" style="width:auto"><strong> </strong>
+            <h1><strong>CSS <span class="color_h1">선택자(Selectors)</span></strong><span
+
+                class="color_h1"></span></h1>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Syntax.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20How%20to.html">Next
+                  Chapter »</a> </div>
+
+            </div>
+            <strong> </strong>
+            <hr><strong> </strong>
+            <h2><strong>CSS 선택자(selector)</strong></h2>
+            <strong> </strong>
+            <p>CSS 선택자는 스타일을 지정할 HTML 요소를 "찾기"(또는 선택)하는 데 사용됩니다.</p>
+            <p>CSS 선택자를 5 가지 범주로 나눌 수 있습니다.</p>
+            <ul>
+              <li> 단순 선택자 (이름, ID, Class를 기준으로 요소 선택) </li>
+              <li> <a href="CSS%20Combinators.html">연결자(Combinator) 선택자 </a> (그들 간의 특정 관계에 따라 요소를 선택) </li>
+              <li> <a href="CSS%20Pseudo-classes.html">의사-클래스(Pseudo-class) 선택자 </a> (특정 상태에 따라 요소 선택) </li>
+              <li> <a href="CSS%20Pseudo-classes.html#pseudo-elements">의사-요소(Pseudo-element) 선택자 </a> (요소의 일부를 선택하고 스타일 지정) </li>
+              <li> <a href="https://www.w3schools.com/css/css_attribute_selectors.asp">속성(Attribute) 선택자</a> (특성 또는 속성 값을 기반으로 요소 선택) </li>
+            </ul>
+            <p> 이 페이지에서는 가장 기본적인 CSS 단순 선택자를 설명합니다.</p>
+            <hr>
+            <h2><strong>요소 선택기</strong></h2>
+            <p>요소 선택기는 요소 이름에 따라 요소를 선택합니다.</p>
+            <p>페이지의 모든 &lt;p&gt;요소는 다음과 같이 선택할 수 있습니다: (모든 &lt;p&gt; 요소가 <strong>빨간색</strong> 텍스트로 <strong>중앙 정렬</strong>된다.)</p>
+            <strong> </strong>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p
+                </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">text-align:</span><span
+
+                  class="highVAL"> center;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  red;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <strong> <br>
+            </strong>
+            <hr><strong> </strong>
+            <h2><strong>id 선택기</strong></h2>
+            <p>id 선택기는 <strong>특정 요소</strong>를 찾기 위해 HTML 태그의 id 속성을 사용합니다.</p>
+            <p>id 는 <strong>페이지 내에서 고유</strong>해야 하며, 따라서, 하나의 고유한 요소를 찾을 때 id 선택기를 사용한다.</p>
+            <p>특정 id를 가진 요소에 해당하는 id 선택기는, hash 문자 "<strong>#</strong>" 다음에 요소의 id 를 적어 작성합니다.</p>
+            <p>아래의 스타일 규칙은&nbsp; id= "para1"로 HTML 요소에 적용된다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">#para1
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">text-align:</span><span
+
+                  class="highVAL"> center;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  red;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_id"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp;id 이름은 숫자로 시작할 수 없습니다!</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <hr>
+            <h2><strong>클래스 선택기</strong></h2>
+            <p>클래스 선택기는 <strong>특정 클래스를 갖는 요소</strong>를 찾습니다.</p>
+            <p>클래스 선택기는 <strong>HTML 클래스 속성</strong>을 사용합니다.</p>
+            <p>특정 클래스에 해당하는 스타일을 작성하려면, <strong>마침표 "." </strong>뒤에 <strong>클래스의 이름</strong>을 쓴 선택기를 만든다.</p>
+            <p>아래의 예에서는, <strong>class="center" </strong>로 선언된 모든 HTML 요소가 <strong>중앙 정렬</strong>되게 합니다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">.center
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">text-align:</span><span
+
+                  class="highVAL"> center;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  red;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_class"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>또한, 특정 HTML 요소에서의 클래스만 영향을 받도록 지정할 수 있습니다.<br>
+              <br>
+              아래의 예에서는, class="center" 로 선언된 모든 <strong>p 요소만</strong> 중심으로 정렬 될 것입니다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p.center
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">text-align:</span><span
+
+                  class="highVAL"> center;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  red;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_syntax_element_class"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td>&nbsp;class 이름은 숫자로 시작할 수 없습니다!</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <hr>
+            <h2><strong>선택기의 그룹화</strong></h2>
+            <p>스타일 시트에서<strong> 같은 스타일 정의</strong>를 갖는<strong> 요소들</strong>이 있다면
+              :</p>
+            <div class="w3-example">
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">h1
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">text-align:</span><span
+
+                  class="highVAL"> center;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  red;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">h2 </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">text-align:</span><span
+
+                  class="highVAL"> center;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  red;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">p </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">text-align:</span><span
+
+                  class="highVAL"> center;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  red;</span><br>
+                }</div>
+            </div>
+            <p>코드를 최소화하기 위해, 선택기들을 그룹 지을 수 있습니다.<br>
+              <br>
+              선택기들을 그룹 짖기 위해서,&nbsp;<b> 쉼표(comma) "," </b>로 각 선택기를 구분합니다.<br>
+              <br>
+              아래의 예제는 위의 코드에서의 선택기들을 그룹화 하였습니다 :</p>
+            <br>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">h1,
+                  h2, p </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">text-align:</span><span
+
+                  class="highVAL"> center;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  red;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_grouping"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <hr>
+            <h2 style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 20px; margin-bottom: 10px; font-size: 30px; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Test
+              Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_syntax1"
+
+                target="_blank">Exercise 1 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_syntax2"
+
+                target="_blank">Exercise 2 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_syntax3"
+
+                target="_blank">Exercise 3 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_syntax4"
+
+                target="_blank">Exercise 4 »</a> </p>
+            <hr>
+            <h2>모든 CSS 단순 선택자</h2>
+            <div class="w3-responsive">
+            <table class="w3-table-all notranslate">
+              <tr>
+                <th style="width:20%">Selector</th>
+                <th style="width:20%">Example</th>
+                <th>Example description</th>
+              </tr>
+              <tr>
+                <td><a href="https://www.w3schools.com/cssref/sel_class.asp">.<i>class</i></a></td>
+                <td class="notranslate">.intro</td>
+                <td>Selects all elements with class=&quot;intro&quot;</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.w3schools.com/cssref/sel_id.asp">#<i>id</i></a></td>
+                <td class="notranslate">#firstname</td>
+                <td>Selects the element with id=&quot;firstname&quot;</td>
+              </tr>
+              <tr>
+                <td><a href="https://www.w3schools.com/cssref/sel_all.asp">*</a></td>
+                <td class="notranslate">*</td>
+                <td>Selects all elements</td>
+              </tr>
+              <tr>
+                <td><i><a href="https://www.w3schools.com/cssref/sel_element.asp">element</a></i></td>
+                <td class="notranslate">p</td>
+                <td>Selects all &lt;p&gt; elements</td>
+              </tr>
+              <tr>
+                <td><i><a href="https://www.w3schools.com/cssref/sel_element_comma.asp">element,element,..</a></i></td>
+                <td class="notranslate">div, p</td>
+                <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+              </tr>
+            </table>
+            </div>
+            <hr>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Syntax.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20How%20to.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+    <br>
+    <hr style="height:5px;">
+  </body>
+</html>
