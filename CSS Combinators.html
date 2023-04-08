@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+                      <meta content="text/html; charset=utf-8" http-equiv="content-type">
+                      <title>CSS 연결자</title>
+                      <style>a.menu_html_images{font-weight:bold;}</style>
+                      <meta name="viewport" content="width=device-width">
+                      <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+                      <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+                      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                      <link rel="stylesheet" href="w3.css">
+
+  </head>
+  <body>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin:10px;">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>CSS <span class="color_h1"><strong>연결자</strong>(Combinators)</span></h1>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Float.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Pseudo-classes.html">Next
+                  Chapter »</a> </div>
+
+            </div>
+            <hr>
+            <h2>CSS Combinators</h2>
+            <p>연결자(combinators)는 선택자(selectors)들 사이의 관계를 설명하는 무엇이다.</p>
+            <p>CSS 선택자는 하나 이상의 단순 셀랙터를 포함 할 수 있다. 단순 셀랙터 사이에, 우리는
+              연결자(combinator)를 포함 할 수 있습니다.</p>
+            <p>CSS 에는 네 가지 연결자가 있습니다 :</p>
+            <ul>
+              <li>자손 선택자(descendant selector) (space)</li>
+              <li>자식 선택자(child selector) ( > )</li>
+              <li>인접 형제 선택자(adjacent sibling selector) ( + )</li>
+              <li>일반 형제 선택자(general sibling selector) ( ~ )</li>
+            </ul>
+            <hr>
+            <h2>자손(Descendant) Selector</h2>
+            <p>자손(descendant) 선택은 지정된 요소의 자손인 모든 요소와 일치합니다.<br>
+              <br>
+              다음은 &lt;div&gt; 요소 내부의 모든 &lt;p&gt; 요소를 선택합니다 :&nbsp; </p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">div
+                  p </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> yellow;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_element"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>자녀(Child) Selector</h2>
+            <p>자녀 선택은 지정된 요소의 직접적인 자녀인 모든 요소를​선택합니다.<br>
+              <br>
+              다음의 예는 &lt;div&gt; 요소의 직계 자식 인 모든 &lt;p&gt; 요소를 선택합니다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">div
+                  &gt; p </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> yellow;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_gt"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>인접 형제(Adjacent Sibling) Selector</h2>
+            <p>인접 형제 선택은 지정된 요소의 인접 형제인 모든 요소를​선택합니다.<br>
+              <br>
+              형제자매 요소는 같은 부모 요소를 가져야 하며, "adjacent" 는 "immediately following"를
+              의미한다.<br>
+              <br>
+              다음 예는&nbsp; &lt;div&gt; 요소 바로 뒤에 놓인 모든 &lt;p&gt; 요소를 선택합니다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">div
+                  + p </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> yellow;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_pluss"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>일반 형제(General Sibling) Selector</h2>
+            <p>일반 형제 선택은 지정된 요소의 형제인 모든 요소를​선택합니다.<br>
+              <br>
+              다음은 &lt;div&gt; 요소의 형제인 모든 &lt;p&gt; 요소를 선택합니다 : </p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">div
+                  ~ p </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> yellow;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_tilde"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <h2>Test Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_combinators1"
+
+                target="_blank">Exercise 1 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_combinators2"
+
+                target="_blank">Exercise 2 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_combinators3"
+
+                target="_blank">Exercise 3 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_combinators4"
+
+                target="_blank">Exercise 4 »</a> </p>
+            <br>
+            <hr>
+
+<h2>All CSS Combinator Selectors</h2>
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:20%">Selector</th>
+    <th style="width:20%">Example</th>
+    <th>Example description</th>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/sel_element_element.asp"><i>element</i> <i>element</i></a></td>
+    <td class="notranslate">div p</td>
+    <td> &lt;div&gt; 요소 내의 모든 &lt;p&gt; 요소를 선택합니다. </td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/sel_element_gt.asp"><i>element</i>&gt;<i>element</i></a></td>
+    <td class="notranslate">div &gt; p</td>
+    <td> 부모가 &lt;div&gt; 요소인 모든 &lt;p&gt; 요소를 선택합니다. </td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/sel_element_pluss.asp"><i>element</i>+<i>element</i></a></td>
+    <td class="notranslate">div + p</td>
+    <td> &lt;div&gt; 요소 바로 뒤에 배치된 모든 &lt;p&gt; 요소를 선택합니다. </td>
+  </tr>
+  <tr>
+    <td><a href="http://www.w3schools.com/cssref/sel_gen_sibling.asp"><i>element1</i>~<i>element2</i></a></td>
+    <td>p ~ ul</td>
+    <td> &lt;p&gt; 요소가 앞에 오는 모든 &lt;ul&gt; 요소를 선택합니다 t</td>
+  </tr>
+</table>
+</div>
+<br>
+            <div class="chapter">
+<div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Float.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Pseudo-classes.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

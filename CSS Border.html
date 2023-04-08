@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>CSS 테두리(Border)</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="w3.css">
+  </head>
+  <body><br>
+    <div id="belowTopnav" style="width:auto" v="">
+      <div id="page" style="width:auto; padding:30px; margin:10px">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>CSS 테두리(Border)</h1>
+            <div class="chapter">
+            <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Box%20Model.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Margin.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <br>
+            <div style="width:100%;border:10px groove #98bf21;padding:8px;">
+              <h2>CSS Border Properties</h2>
+              <p>CSS <code class="w3-codespan" class="w3-codespan">border</code> 속성은 요소의 테두리의 style과 width, 그리고 color을 지정할 수 있습니다.</p>
+            </div>
+
+            <div class="w3-container w3-border w3-border-black w3-margin-top">
+<p>I have borders on all sides.</p>
+</div>
+<br>
+<div class="w3-container w3-border-bottom w3-border-red">
+<p>I have a red bottom border.</p>
+</div>
+<br>
+<div class="w3-container w3-border w3-round-xlarge">
+<p>I have rounded borders.</p>
+</div>
+<br>
+<div class="w3-container w3-pale-blue w3-leftbar w3-border-blue">
+<p>I have a blue left border.</p>
+</div>
+<hr>
+            <h2>Border Style</h2>
+            <p>border-style 속성이 표시할 테두리의 종류를 지정합니다.</p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td><b>&nbsp; Note:</b> <b>border-style</b> 성질이 설정되지 않는 한,
+                    border 속성 중에 어떤 것도 효과가 없습니다!</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2>border-style values:</h2>
+            <div class="w3-example">
+<h3>Example</h3>
+  <p>Demonstration of the different border styles:</p>
+<div class="w3-code notranslate cssHigh">
+p.dotted {border-style: dotted;}<br>p.dashed 
+{border-style: dashed;}<br>p.solid {border-style: solid;}<br>p.double 
+{border-style: double;}<br>p.groove {border-style: groove;}<br>p.ridge 
+{border-style: ridge;}<br>p.inset {border-style: inset;}<br>p.outset 
+{border-style: outset;}<br>p.none {border-style: none;}<br>p.hidden {border-style: hidden;}<br>
+p.mix {border-style: dotted dashed solid double;}</div>
+<p>Result:</p>
+<div class="w3-white w3-padding notranslate">
+<p style="border-style: dotted;padding:2px 4px;">A dotted border.</p>
+<p style="border-style: dashed;padding:2px 4px;">A dashed border.</p>
+<p style="border-style: solid;padding:2px 4px;">A solid border.</p>
+<p style="border-style: double;padding:2px 4px;">A double border.</p>
+<p style="border-style: groove;padding:2px 4px;">A groove border. The effect depends on the border-color value.</p>
+<p style="border-style: ridge;padding:2px 4px;">A ridge border. The effect depends on the border-color value.</p>
+<p style="border-style: inset;padding:2px 4px;">An inset border. The effect depends on the border-color value.</p>
+<p style="border-style: outset;padding:2px 4px;">An outset border. The effect depends on the border-color value.</p>
+<p style="border-style: none;padding:2px 4px;">No border.</p>
+<p style="border-style: hidden;padding:2px 4px;">A hidden border.</p>
+<p style="border-style: dotted dashed solid double;padding:2px 4px;">A mixed border.</p>
+              </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_border-style"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <hr>
+            <h2>Border Width</h2>
+            <p> <code class="w3-codespan" class="w3-codespan">border-width</code> 속성은 테두리의 너비를 설정하는 데 사용됩니다.</p>
+            <p>폭은 pixels 단위로&nbsp; 또는 세 개의 사전 정의 된 값(thin, medium, or thick)들 중 하나를 사용하여 설정: </p>
+            <p><b>Note:</b> The "border-width" 속성이 단독으로 사용되는 경우 작동하지 않습니다.&nbsp;
+              "border-style" 속성을 먼저 설정합니다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p.one
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-style:</span><span
+
+                  class="highVAL"> solid;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-width:</span><span
+
+                  class="highVAL"> 5px;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">p.two </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-style:</span><span
+
+                  class="highVAL"> solid;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-width:</span><span
+
+                  class="highVAL"> medium;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">p.three </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-style:</span><span
+
+                  class="highVAL"> solid;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-width:</span><span
+
+                  class="highVAL"> 2px 10px 4px 20px;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_border-width"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>Border Color</h2>
+            <p> <code class="w3-codespan" class="w3-codespan">border-color</code> 속성은 테두리의 색상을 설정하는 데 사용됩니다. color 는 다음과 같이 설정될 수 있다.:</p>
+            <ul>
+              <li>name - specify a color name, like "red"</li>
+              <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+              <li>Hex - specify a hex value, like "#ff0000"</li>
+              <li>HSL - specify a HSL value, like "hsl(0,100%,50%)"</li>
+              <li>transparent</li>
+            </ul>
+            <p><b>Note : </b>
+              <code class="w3-codespan" class="w3-codespan">border-color</code> 가 설정되어 있지 않으면, 해당 요소의 색상을 상속합니다.  <code class="w3-codespan" class="w3-codespan">border-color</code> 속성이 단독으로 사용되는 경우 작동하지 않습니다. <code class="w3-codespan" class="w3-codespan">border-style</code>
+               속성을 먼저 설정합니다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p.one
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-style:</span><span
+
+                  class="highVAL"> solid;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-color:</span><span
+
+                  class="highVAL"> red;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">p.two </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-style:</span><span
+
+                  class="highVAL"> solid;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-color:</span><span
+
+                  class="highVAL"> green;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">p.three </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-style:</span><span
+
+                  class="highVAL"> solid;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-color:</span><span
+
+                  class="highVAL"> red green blue yellow;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_border-color1"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>Border - 각각의 면</h2>
+            <p>CSS 에서는 서로 다른 면에 대해 서로 다른 테두리를 지정할 수 있습니다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p
+                </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-top-style:</span><span
+
+                  class="highVAL"> dotted;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-right-style:</span><span
+
+                  class="highVAL"> solid;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-bottom-style:</span><span
+
+                  class="highVAL"> dotted;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-left-style:</span><span
+
+                  class="highVAL"> solid;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_border-side"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>위의 예는 하나의 속성으로 설정할 수도 있습니다 ::</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p
+                </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border-style:</span><span
+
+                  class="highVAL"> dotted solid;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_border-side2"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p><code class="w3-codespan" class="w3-codespan">border-style</code> 속성은 1개 ~ 4개의 값을 가질 수 있습니다..</p>
+            <ul>
+              <li><b>border-style:dotted solid double dashed; </b>
+                <ul>
+                  <li>top border is dotted</li>
+                  <li>right border is solid</li>
+                  <li>bottom border is double</li>
+                  <li>left border is dashed</li>
+                </ul>
+                <br>
+              </li>
+              <li><b>border-style:dotted solid double;</b>
+                <ul>
+                  <li>top border is dotted</li>
+                  <li>right and left borders are solid</li>
+                  <li>bottom border is double</li>
+                </ul>
+                <br>
+              </li>
+              <li><b>border-style:dotted solid;</b>
+                <ul>
+                  <li>top and bottom borders are dotted</li>
+                  <li>right and left borders are solid</li>
+                </ul>
+                <br>
+              </li>
+              <li><b>border-style:dotted;</b>
+                <ul>
+                  <li>all four borders are dotted</li>
+                </ul>
+              </li>
+            </ul>
+            <p>위의 예에서는 <code class="w3-codespan" class="w3-codespan">border-style</code> 속성에 사용되었다. 하지만, <code class="w3-codespan" class="w3-codespan">border-width</code> 와
+              <code class="w3-codespan" class="w3-codespan">border-color</code> 속성에도 사용할 수 있다.</p>
+            <hr>
+            <h2>Border - 단축형 속성</h2>
+            <p>위의 예에서 볼 수 있듯이, 경계를 처리할 때 고려해야 할 여러 속성이 있습니다</p>
+            <p>코드를 단축하기 위해, 하나의 속성에 모든 개별 경계 속성을 지정하는 것도 가능하다. 이는 단축형 속성이라고합니다.</p>
+            <p>border 속성은 다음과 같은 개별 경계 속성에 대한 단축형 입니다 :</p>
+            <ul>
+              <li><code class="w3-codespan" class="w3-codespan">border-width</code></li>
+              <li><code class="w3-codespan" class="w3-codespan">border-style</code>(required)</li>
+              <li><code class="w3-codespan" class="w3-codespan">border-color</code></li>
+            </ul>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p
+                </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">border:</span><span class="highVAL">
+                  5px solid red;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_border"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>CSS Rounded Borders</h2>
+<p>The <code class="w3-codespan" class="w3-codespan">border-radius</code> property is used to add rounded borders to an element:</p>
+<p style="border: 2px solid red;padding:2px;">Normal border</p>
+<p style="border: 2px solid red;border-radius: 5px;padding:2px;">Round border</p>
+<p style="border: 2px solid red;border-radius: 8px;padding:2px;">Rounder border</p>
+<p style="border: 2px solid red;border-radius: 12px;padding:2px;">Roundest border</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p {<br>&nbsp;&nbsp;border: 2px solid red;<br>&nbsp;&nbsp;border-radius: 5px;<br>}</div>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_border_round" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+            <h2 style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 20px; margin-bottom: 10px; font-size: 30px; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Test
+              Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_border1"
+
+                target="_blank">Exercise 1 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_border2"
+
+                target="_blank">Exercise 2 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_border3"
+
+                target="_blank">Exercise 3 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_border4"
+
+                target="_blank">Exercise 4 »</a> </p>
+            <hr style="box-sizing: content-box; height: 0px; margin-top: 20px; margin-bottom: 20px; border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 14.2857141494751px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+            <h2>All CSS Border Properties</h2>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:25%">Property</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border.asp">border</a></td>
+                  <td>Sets all the border properties in one declaration</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-bottom.asp">border-bottom</a></td>
+                  <td>Sets all the bottom border properties in one declaration</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-bottom_color.asp">border-bottom-color</a></td>
+                  <td>Sets the color of the bottom border</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-bottom_style.asp">border-bottom-style</a></td>
+                  <td>Sets the style of the bottom border</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-bottom_width.asp">border-bottom-width</a></td>
+                  <td>Sets the width of the bottom border</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-color.asp">border-color</a></td>
+                  <td>Sets the color of the four borders</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-left.asp">border-left</a></td>
+                  <td>Sets all the left border properties in one declaration</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-left_color.asp">border-left-color</a></td>
+                  <td>Sets the color of the left border</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-left_style.asp">border-left-style</a></td>
+                  <td>Sets the style of the left border</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-left_width.asp">border-left-width</a></td>
+                  <td>Sets the width of the left border</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-right.asp">border-right</a></td>
+                  <td>Sets all the right border properties in one declaration</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-right_color.asp">border-right-color</a></td>
+                  <td>Sets the color of the right border</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-right_style.asp">border-right-style</a></td>
+                  <td>Sets the style of the right border</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-right_width.asp">border-right-width</a></td>
+                  <td>Sets the width of the right border</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-style.asp">border-style</a></td>
+                  <td>Sets the style of the four borders</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-top.asp">border-top</a></td>
+                  <td>Sets all the top border properties in one declaration</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-top_color.asp">border-top-color</a></td>
+                  <td>Sets the color of the top border</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-top_style.asp">border-top-style</a></td>
+                  <td>Sets the style of the top border</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-top_width.asp">border-top-width</a></td>
+                  <td>Sets the width of the top border</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_border-width.asp">border-width</a></td>
+                  <td>Sets the width of the four borders</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <hr>
+            <div class="chapter">
+<div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Box%20Model.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Margin.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

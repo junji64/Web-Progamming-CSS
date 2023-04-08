@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>CSS Pseudo-classes</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="w3.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                      <style>
+p.tooltiptext {
+   display: none;
+   background-color: yellow;
+   padding: 20px;
+}
+
+div.tooltip-container:hover p.tooltiptext {
+   display: block;
+}
+
+.mouseover {
+background-color: #4CAF50;
+color: white;
+display: inline-block;
+padding: 2px 25px;
+text-align: center;
+width:93%;
+}
+.mouseover:hover {
+background-color:#008CBA;
+}
+.focus {
+  width: 99%;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+}
+
+.focus:focus {
+  background-color:#555555; 
+  color: white;
+  outline: none;
+}
+@media screen and (max-width: 600px) {
+    .focus, .mouseover {
+       width:100%;
+       margin:5px;
+    }
+}
+</style>
+  </head>
+  <body><br>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin:10px;">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>CSS <span class="color_h1">Pseudo-classes</span><span class="color_h1"></span></h1>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Combinators.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Pseudo-elements.html">Next
+                  Chapter »</a> </div>
+
+            </div>
+            <hr>
+            <p class="intro">CSS pseudo-classes 는 요소의 특별한 상태를 지정하는데 사용됩니다.</p>
+            <p class="intro">예를 들면, 다음과 같은 경우에 사용될 수 있습니다:</p>
+            <ul>
+              <li>요소의 위에 마우스가 있을 때의 스타일</li>
+              <li>방문되었던 것과 방문된 적이 없던 링크를 다르게 스타일&nbsp; </li>
+              <li>요소가 선택되었을(get focus) 때의 스타일</li>
+            </ul>
+<div class="w3-row">
+<div class="w3-half">
+<div class="mouseover">
+<p>Mouse Over Me</p>
+</div>
+</div>
+
+<div class="w3-half">
+<input class="focus" type="text" name="fname" placeholder="Click Me To Get Focus">
+</div>
+</div>
+<p style="clear:both;"></p>
+            <hr>
+            <h2>pseudo-classes 문법</h2>
+            <p>pseudo-classes 문법:</p>
+            <div class="w3-example">
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">selector:pseudo-class
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">property:</span><span
+
+                  class="highVAL">value;</span><br>
+                }</div>
+            </div>
+            <hr>
+            <h2>Anchor Pseudo-classes</h2>
+            <p>Links 는 CSS 가 지원되는 브라우져에서 다른 방법들로 표시될 수 있다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highCOM">/*
+                  unvisited link */</span><br>
+                <span class="highELE">a:link </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  #FF0000;</span><br>
+                }<br>
+                <br>
+                <span class="highCOM">/* visited link */</span><br>
+                <span class="highELE">a:visited </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  #00FF00;</span><br>
+                }<br>
+                <br>
+                <span class="highCOM">/* mouse over link */</span><br>
+                <span class="highELE">a:hover </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  #FF00FF;</span><br>
+                }<br>
+                <br>
+                <span class="highCOM">/* selected link */</span><br>
+                <span class="highELE">a:active </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  #0000FF;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_link"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> <br>
+            </div>
+            <br>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td><b>&nbsp;Note:</b> 
+                    a:hover 는 CSS 정의에서 a:link 및 a:visited 뒤에 와야 동작합니다!
+a:active는 CSS 정의에서 a:hover 뒤에 와야 동작합니다!
+의사 클래스 이름은 대소문자를 구분하지 않습니다.</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <hr>
+            <h2>Pseudo-classes 와 CSS Classes</h2>
+            <p>Pseudo-classes 는 CSS classes 와 결합되어 사용될 수 있다.:</p>
+            <p>다음의 예에서 링크에 hover 하면, red 로 표시될 것이다. </p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">a.highlight:hover
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  #ff0000;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_pseudo-class"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+
+
+            <hr>
+
+            <h2>Hover on &lt;div&gt;</h2>
+<p>&lt;div&gt;요소에서 : <code class="w3-codespan">:hover</code> 의사 클래스를 사용하는 예 :</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+div:hover {<br>&nbsp; background-color: blue;<br>}</div>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_pseudo-class_hover_div" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+<br>
+</div>
+<hr>
+
+<h2>Simple Tooltip Hover</h2>
+<p>&lt;div&gt; 요소 위로 마우스를 가져 가면 툴팁과 같은&lt;p&gt; 요소가 표시됩니다.
+
+<div class="tooltip-container w3-text-red"><b>&lt;p&gt; 요소를 표시하려면 여기에 마우스를 올립니다.:</b>
+  <p class="tooltiptext w3-text-black">Tada! Here I am!</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p {<br>&nbsp; display: none;<br>&nbsp; 
+background-color: yellow;<br>&nbsp; padding: 20px;<br>}<br><br>
+div:hover p {<br>&nbsp; display: block;<br>}</div>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_pseudo-class_hover_tooltip" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+<br>
+</div>
+
+<hr>
+
+
+            <h2>CSS - :first-child Pseudo-class</h2>
+            <p><code class="w3-codespan">:first-child</code> pseudo-class 는 또 다른 요소에 대하여 첫번째 자식인 요소를 지정하는데 사용된다.</p>
+
+            <h2>첫번째 &lt;p&gt; 요소 선택</h2>
+            <p>다음 예에서, selector 는 어떤 요소이던 간에 그 요소의 첫번째 자식에 해당되는 &lt;p&gt; 요소를
+              지정한다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p:first-child
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  blue;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_first-child1"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>모든 &lt;p&gt; 요소에서 첫번째 &lt;i&gt; 요소 선택</h2>
+            <p>다음 예에서, selector 는 모든 &lt;p&gt; 요소의 첫번째&nbsp; &lt;i&gt; 요소를 지정한다.
+            </p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p
+                  i:first-child </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  blue;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_first-child2"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>모든 첫번째 자녀 &lt;p&gt; 요소들 중에서 모든 &lt;i&gt; 요소들 선택</h2>
+            <p>다음 예에서, selector 는 어떤 요소의 첫번째 자식에 해당되는 &lt;p&gt; 요소의 안에 있는
+              &lt;i&gt; 요소를 지정한다. :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p:first-child
+                  i </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL">
+                  blue;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_first-child3"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>CSS - :lang Pseudo-class</h2>
+            <p><code class="w3-codespan">:lang</code> pseudo-class 서로 다른 언어에 대하여 특별한 규칙을 정의하는데 사용된다..</p>
+
+            <p>다음 예에서, <code class="w3-codespan">:lang</code> class 는 lang="no" 를 가지는 q 요소에 대한 인용부호를 정의 한다. :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate htmlHigh"> <span class="highLT">&lt;</span><span
+
+                  class="highELE">html</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">style</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="cssHigh"><span class="highELE">q:lang(no) </span>{<br>
+                  &nbsp;&nbsp;&nbsp; <span class="highATT">quotes:</span><span
+
+                    class="highVAL"> "~" "~";</span></span><br>
+                }<br>
+                <span class="highLT">&lt;</span><span class="highELE">/style</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/head</span><span
+
+                  class="highGT">&gt;</span><br>
+                <br>
+                <span class="highLT">&lt;</span><span class="highELE">body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">p</span><span
+
+                  class="highGT">&gt;</span>Some text <span class="highLT">&lt;</span><span
+
+                  class="highELE">q</span> <span class="highATT">lang=</span><span
+
+                  class="highVAL">"no"</span><span class="highGT">&gt;</span>A
+                quote in a paragraph<span class="highLT">&lt;</span><span class="highELE">/q</span><span
+
+                  class="highGT">&gt;</span> Some text.<span class="highLT">&lt;</span><span
+
+                  class="highELE">/p</span><span class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/body</span><span
+
+                  class="highGT">&gt;</span><br>
+                <span class="highLT">&lt;</span><span class="highELE">/html</span><span
+
+                  class="highGT">&gt;</span> </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_lang"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <div class="tryit_ex"> <img src="http://www.w3schools.com/images/tryitimg.gif"
+
+                style="width:40px;height:46px" alt="Examples">
+              <h2>More Examples</h2>
+            </div>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_link2">Add
+                different styles to hyperlinks</a><br>
+              This example demonstrates how to add other styles to hyperlinks.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_link_focus">Use
+                of :focus</a><br>
+              This example demonstrates how to use the :focus pseudo-class.</p>
+            <hr>
+            <h2>Test Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_pseudo_classes1"
+
+                target="_blank">Exercise 1 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_pseudo_classes2"
+
+                target="_blank">Exercise 2 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_pseudo_classes3"
+
+                target="_blank">Exercise 3 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_pseudo_classes4"
+
+                target="_blank">Exercise 4 »</a> </p>
+            <hr>
+            <h2>All CSS Pseudo Classes</h2>
+            <table class="w3-table-all notranslate" style="box-sizing: border-box; border-spacing: 0px; border-collapse: collapse; margin-bottom: 12px; width: 1058px; max-width: 100%; border-left-width: 1px; border-left-style: solid; border-left-color: rgb(221, 221, 221); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); color: rgb(51, 51, 51); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 21.4285717010498px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+              <tbody style="box-sizing: border-box;">
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <th style="box-sizing: border-box; padding: 8px; text-align: left; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); width: 211px;">Selector</th>
+                  <th style="box-sizing: border-box; padding: 8px; text-align: left; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); width: 211px;">Example</th>
+                  <th style="box-sizing: border-box; padding: 8px; text-align: left; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Example
+                    description</th>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_active.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:active</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">a:active</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    the active link</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_checked.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:checked</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">input:checked</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every checked &lt;input&gt; element</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_disabled.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:disabled</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">input:disabled</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every disabled &lt;input&gt; element</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_empty.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:empty</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">p:empty</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every &lt;p&gt; element that has no children</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_enabled.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:enabled</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">input:enabled</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every enabled &lt;input&gt; element</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_firstchild.asp"
+
+                      style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:first-child</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">p:first-child</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every &lt;p&gt; elements that is the first child of its
+                    parent</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_first-of-type.asp"
+
+                      style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:first-of-type</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">p:first-of-type</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every &lt;p&gt; element that is the first &lt;p&gt; element
+                    of its parent</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_focus.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:focus</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">input:focus</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    the &lt;input&gt; element that has focus</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_hover.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:hover</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">a:hover</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    links on mouse over</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_in-range.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:in-range</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">input:in-range</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    &lt;input&gt; elements with a value within a specified range</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_invalid.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:invalid</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">input:invalid</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    all &lt;input&gt; elements with an invalid value</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_lang.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:lang(<i
+
+                        style="box-sizing: border-box;">language</i>)</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">p:lang(it)</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every &lt;p&gt; element with a lang attribute value starting
+                    with "it"</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_last-child.asp"
+
+                      style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:last-child</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">p:last-child</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every &lt;p&gt; elements that is the last child of its
+                    parent</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_last-of-type.asp"
+
+                      style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:last-of-type</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">p:last-of-type</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every &lt;p&gt; element that is the last &lt;p&gt; element
+                    of its parent</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_link.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:link</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">a:link</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    all unvisited links</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_not.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:not(selector)</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">:not(p)</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every element that is not a &lt;p&gt; element</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_nth-child.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:nth-child(n)</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">p:nth-child(2)</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every &lt;p&gt; element that is the second child of its
+                    parent</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_nth-last-child.asp"
+
+                      style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:nth-last-child(n)</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">p:nth-last-child(2)</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every &lt;p&gt; element that is the second child of its
+                    parent, counting from the last child</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_nth-last-of-type.asp"
+
+                      style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:nth-last-of-type(n)</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">p:nth-last-of-type(2)</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every &lt;p&gt; element that is the second &lt;p&gt; element
+                    of its parent, counting from the last child</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_nth-of-type.asp"
+
+                      style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:nth-of-type(n)</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">p:nth-of-type(2)</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every &lt;p&gt; element that is the second &lt;p&gt; element
+                    of its parent</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_only-of-type.asp"
+
+                      style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:only-of-type</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">p:only-of-type</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every &lt;p&gt; element that is the only &lt;p&gt; element
+                    of its parent</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_only-child.asp"
+
+                      style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:only-child</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">p:only-child</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    every &lt;p&gt; element that is the only child of its parent</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_optional.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:optional</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">input:optional</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    &lt;input&gt; elements with no "required" attribute</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_out-of-range.asp"
+
+                      style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:out-of-range</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">input:out-of-range</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    &lt;input&gt; elements with a value outside a specified
+                    range</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_read-only.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:read-only</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">input:read-only</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    &lt;input&gt; elements with a "readonly" attribute specified</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_read-write.asp"
+
+                      style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:read-write</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">input:read-write</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    &lt;input&gt; elements with no "readonly" attribute</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_required.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:required</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">input:required</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    &lt;input&gt; elements with a "required" attribute specified</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_root.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:root</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">root</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    the document's root element</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_target.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:target</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">#news:target</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    the current active #news element (clicked on a URL
+                    containing that anchor name)</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_valid.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:valid</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">input:valid</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    all &lt;input&gt; elements with a valid value</td>
+                </tr>
+                <tr style="box-sizing: border-box; background-color: rgb(241, 241, 241);">
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);"><a
+
+                      href="http://www.w3schools.com/cssref/sel_visited.asp" style="box-sizing: border-box; color: rgb(0, 0, 0); text-decoration: underline; background-color: transparent;">:visited</a></td>
+                  <td class="notranslate" style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">a:visited</td>
+                  <td style="box-sizing: border-box; padding: 8px; line-height: 1.42857143; vertical-align: top; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221);">Selects
+                    all visited links</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <hr>
+              <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Combinators.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Pseudo-elements.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

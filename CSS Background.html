@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>CSS Background</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="w3.css">
+  </head>
+  <body><br>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin:10px;">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>CSS <span class="color_h1">Background</span></h1>
+            <div class="chapter">
+               <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20How%20to.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Text.html">Next
+                  Chapter »</a> </div>
+             
+            </div>
+            <br>
+            <div style="width:100%;border:1px solid gray;padding:8px;background:#e1efbb url('http://www.w3schools.com/css/mountain.jpg')">
+              <p style="margin-right:150px;">CSS background 성질은 요소의 배경 효과를 정의하는
+                데 사용됩니다. </p>
+              <p>background 효과를 위해 사용되는 CSS 성질:</p>
+              <ul>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-repeat</li>
+                <li>background-attachment</li>
+                <li>background-position</li>
+              </ul>
+            </div>
+            <br>
+            <hr>
+            <h2>Background Color</h2>
+            <p>background-color 속성은 요소의 배경 색상을 지정합니다.</p>
+            <p>페이지의 배경색은 body selector 에 정의된다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">body
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> lightblue;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background-color_body"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>CSS 에서 color 는 다음과 같이 정의된다:</p>
+            <ul>
+              <li>a HEX value - like "#ff0000"</li>
+              <li>an RGB value - like "rgb(255,0,0)"</li>
+              <li>an HSL value - like "hsl(0,100%,50%)"</li>
+              <li>a color name - like "red"</li>
+            </ul>
+            <p>가능한 색상 값의 전체 목록. <a href="./../htmls/html%20Colors.html">CSS
+                Color Values</a> </p>
+            <p>In the example below, the h1, p, and div elements have different
+              background colors:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">h1
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> green;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">div </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> lightblue;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">p </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span
+
+                  class="highVAL"> yellow;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background-color_elements"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>Background Image</h2>
+            <p>background-image 속성은 요소의 배경으로 사용할 이미지를 지정합니다.</p>
+            <p>기본형으로, 전체 요소를 덮도록 이미지가 반복된다.</p>
+            <p>페이지의 배경 이미지는 다음과 같이 설정할 수 있습니다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">body
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-image:</span><span
+
+                  class="highVAL"> url("paper.gif");</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background-image"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>다음은 텍스트와 배경 이미지의 나쁜 조합의 예입니다. 텍스트를 거의 읽을 수 없습니다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">body
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-image:</span><span
+
+                  class="highVAL"> url("bgdesert.jpg");</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_bad"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>Background Image - 가로 또는 세로로 반복</h2>
+            <p>기본적으로 background-image 속성은 수평 및 수직으로 이미지를 반복합니다.</p>
+            <p>일부 이미지는 가로 또는 세로로 만 반복해야 합니다, 그렇지 않으면, 다음과 같이 이상하게 보일 것입니다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">body
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-image:</span><span
+
+                  class="highVAL"> url("gradient_bg.png");</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_gradient1"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>이미지가 가로 방향으로 만 (repeat-x) 반복하는 경우, 배경이 보기에 좋다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">body
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-image:</span><span
+
+                  class="highVAL"> url("gradient_bg.png");</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-repeat:</span><span
+
+                  class="highVAL"> repeat-x;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_gradient2"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>Background Image - Set position and no-repeat</h2>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td><b>Note:</b> 배경 이미지를 사용하는 경우, 텍스트를 방해하지 않는 이미지를 사용하라!</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>한 번만 이미지를 표시하기는 background-repeat 속성에 의해 지정됩니다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">body
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-image:</span><span
+
+                  class="highVAL"> url("img_tree.png");</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-repeat:</span><span
+
+                  class="highVAL"> no-repeat;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_norepeat"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>위의 예에서, 배경 이미지는 텍스트와 같은 장소에 표시된다. 텍스트를 방해하지 않도록 하려면, 이미지의 위치를​​ 변경한다.<br>
+              <br>
+              이미지의 위치는 background-position 속성으로 지정됩니다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">body
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-image:</span><span
+
+                  class="highVAL"> url("img_tree.png");</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-repeat:</span><span
+
+                  class="highVAL"> no-repeat;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-position:</span><span
+
+                  class="highVAL"> right top;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_position"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>Background - <strong>약식 속성</strong>(Shorthand property)</h2>
+            <p>위의 예에서 볼 수 있듯이, 배경을 다룰 때 고려해야 할 여러 속성이 있습니다.<br>
+              <br>
+              코드를 단축하기 위해, 하나의 속성으로 모든 속성을 지정하는 것도 가능하다. 이는 약식 속성이라고 합니다.<br>
+              <br>
+              배경에 대한 약식 속성은 단순히 "background" 입니다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">body
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background:</span><span
+
+                  class="highVAL"> #ffffff url("img_tree.png") no-repeat right
+                  top;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background_shorthand"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p> 약식 속성을 사용하는 경우 속성 값의 순서는 다음과 같습니다:</p>
+            <ul>
+              <li>background-color</li>
+              <li>background-image</li>
+              <li>background-repeat</li>
+              <li>background-attachment</li>
+              <li>background-position</li>
+            </ul>
+            <p>속성 값 중 하나가 누락 된 경우에, 적은 것들이 순서로 된 한, 문제가 되지 않습니다.</p>
+            <p>This example uses more advanced CSS. Take a look: <a target="_blank"
+
+                href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background_shorthand2">
+                Advanced example</a></p>
+            <hr>
+            <h2>Background Image - Fixed position</h2>
+            <p>To specify that the background image should be fixed (will not
+              scroll with the rest of the page), use the background-attachment
+              property:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">body
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-image:</span><span
+
+                  class="highVAL"> url("img_tree.png");</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-repeat:</span><span
+
+                  class="highVAL"> no-repeat;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-position:</span><span
+
+                  class="highVAL"> right top;</span><br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">background-attachment:</span><span
+
+                  class="highVAL"> fixed;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_attachment"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <hr style="box-sizing: content-box; height: 0px; margin-top: 20px; margin-bottom: 20px; border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.1428565979004px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+            <h2 style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 20px; margin-bottom: 10px; font-size: 30px; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Test
+              Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_background1"
+
+                target="_blank">Exercise 1 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_background2"
+
+                target="_blank">Exercise 2 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_background3"
+
+                target="_blank">Exercise 3 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_background4"
+
+                target="_blank">Exercise 4 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_background5"
+
+                target="_blank">Exercise 5 »</a> </p>
+            <hr style="box-sizing: content-box; height: 0px; margin-top: 20px; margin-bottom: 20px; border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.1428565979004px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+            <hr>
+            <h2>All CSS Background Properties</h2>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:30%">Property</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/css3_pr_background.asp">background</a></td>
+                  <td>모든 background 속성을 하나의 선언으로 지정</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_background-attachment.asp">background-attachment</a></td>
+                  <td>Sets whether a background image is fixed or scrolls with
+                    the rest of the page</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_background-color.asp">background-color</a></td>
+                  <td>Sets the background color of an element</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_background-image.asp">background-image</a></td>
+                  <td>Sets the background image for an element</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_background-position.asp">background-position</a></td>
+                  <td>Sets the starting position of a background image</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_background-repeat.asp">background-repeat</a></td>
+                  <td>Sets how a background image will be repeated</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <br>
+            <div class="chapter">
+               <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20How%20to.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Text.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </body>
+</html>

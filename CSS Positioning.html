@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+                      <meta content="text/html; charset=utf-8" http-equiv="content-type">
+                      <title>CSS 위치잡기(Positioning)</title>
+                      <style>a.menu_html_images{font-weight:bold;}</style>
+                      <meta name="viewport" content="width=device-width">
+                      <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+                      <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+                      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                      <link rel="stylesheet" href="w3.css">
+
+  </head>
+  <body><br>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin:10px;">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>CSS <span class="color_h1">위치잡기(Positioning)</span></h1>
+            <div class="chapter">
+             <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Display.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Float.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr>
+            <div style="width:98%;height:180px;position:relative">
+              <p style="position:absolute;top:0px;right:0px">Positioning can be
+                tricky sometimes!</p>
+              <div style="width:55%;height:60%;position:absolute;top:0px;left:0px;border:1px solid #c3c3c3;background-color:#e5eecc;padding:0px 10px;z-index:1;">
+                <h2>Decide which element to display in front!</h2>
+              </div>
+              <div style="width:55%;height:60%;position:absolute;bottom:0px;right:0px;border:1px solid #c3c3c3;background-color:#e5eecc;padding:0px 10px;">
+                <h2 style="margin-top:25px">Elements can overlap!</h2>
+              </div>
+            </div>
+            <hr>
+            <h2>Positioning</h2>
+            <p>CSS <code class="w3-codespan">position</code>  속성은 요소에 사용되는 위치 결정 방법의 유형을 지정합니다.</p>
+            <p> 5 가지 다른 위치 값이 있습니다.:</p>
+            <ul>
+            <li><code class="w3-codespan">static</code> : 기본값</li>
+            <li><code class="w3-codespan">relative</code></li>
+            <li><code class="w3-codespan">fixed</code></li>
+            <li><code class="w3-codespan">absolute</code></li>
+            <li><code class="w3-codespan">sticky</code></li>
+            </ul>
+
+            <p>요소는 <strong>top, bottom, left, </strong>및 <strong>right 속성</strong>을
+              사용하여 위치 될 수 있다.&nbsp; 그러나,&nbsp; <code class="w3-codespan">position</code> 속성이 먼저
+              설정되어 있지 않으면 이러한 속성이 작동하지 않습니다. 이들은, 또한, positioning 방법에 따라 다르게
+              작동한다.</p>            <hr>
+            <h2>Static Positioning</h2>
+            <p>HTML 요소는 <strong>기본적으로 정적 배치(positioned static)</strong>됩니다.
+              정적으로 위치가 지정된(static positioned) 요소는 항상 페이지의 기본적인 흐름에 따라 배치된다.</p>
+            <p>Static positioned 요소는 top, bottom, left, 및 right 속성에 의해 영향을 받지
+              않습니다.</p>
+            <hr>
+            <h2>고정된(Fixed) Positioning</h2>
+            <p> <code class="w3-codespan">position:fixed</code> 요소는 뷰포트에 상대적으로 배치되므로 페이지가 스크롤 되더라도 항상 같은 위치에 유지됩니다.</p>
+            <div class="w3-theme-border" style="border-width:3px;background-color:#cae8ca;border-style:solid;position:fixed;padding:7px;bottom:0;right:0;max-width:450px;z-index:999">
+This &lt;div&gt; element has <code class="w3-codespan">position: fixed;</code></div>
+<p> 페이지 오른쪽 하단에 fixed 요소가 있습니다. 사용되는 CSS는 다음과 같습니다.:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> div.fixed {<br>
+                &nbsp;&nbsp;&nbsp; position: fixed;<br>
+                &nbsp;&nbsp;&nbsp; bottom: 0;<br>
+                &nbsp;&nbsp;&nbsp; right: 0;<br>
+                &nbsp;&nbsp;&nbsp; width: 300px;<br>
+                &nbsp;&nbsp;&nbsp; border: 3px solid #73AD21;<br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_fixed"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>            
+                <hr>
+            <h2>상대적(Relative) 위치</h2>
+            <p>상대적 위치(relative positioned) 요소는 정상 위치에 대하여 상대적으로 위치된다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> div.relative {<br>
+                &nbsp;&nbsp;&nbsp; position: relative;<br>
+                &nbsp;&nbsp;&nbsp; left: 30px;<br>
+                &nbsp;&nbsp;&nbsp; border: 3px solid #73AD21;<br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_relative"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>상대적으로 위치가 지정된(relatively positioned) 요소의 내용이 움직여서 다른 요소와 중첩될 수
+              있지만, 요소가 보유한&nbsp; 공간은 여전히​​ 기본적인 흐름에서 보존 될 것이다.</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> h2.pos_top {<br>
+                &nbsp;&nbsp; position: relative;<br>
+                &nbsp;&nbsp;&nbsp;top: -50px;<br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_relative2"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>상대 위치가 지정된 요소는 종종 절대 위치 요소에 대한 컨테이너 블록으로 사용된다.</p>
+            <hr>
+            <h2>절대적(Absolute) 위치 </h2>
+            <p>절대적(absolute) 위치 요소는 정적(static)이 아닌 위치를 가지는 부모 요소(parent
+              element)에 상대적으로 위치된다. 이러한 요소가 없으면, 그를 담는 블록은 &lt;html&gt;이다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> div.relative {<br>
+                &nbsp;&nbsp;&nbsp; position: relative;<br>
+                &nbsp;&nbsp;&nbsp; width: 400px;<br>
+                &nbsp;&nbsp;&nbsp; height: 200px;<br>
+                &nbsp;&nbsp;&nbsp; border: 3px solid #73AD21;<br>
+                } <br>
+                <br>
+                div.absolute {<br>
+                &nbsp;&nbsp;&nbsp; position: absolute;<br>
+                &nbsp;&nbsp;&nbsp; top: 80px;<br>
+                &nbsp;&nbsp;&nbsp; right: 0;<br>
+                &nbsp;&nbsp;&nbsp; width: 200px;<br>
+                &nbsp;&nbsp;&nbsp; height: 100px;<br>
+                &nbsp;&nbsp;&nbsp; border: 3px solid #73AD21;<br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_absolute"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>절대 위치 요소는 정상 흐름에서 제거됩니다. 절대 위치 요소가 존재하지 않는 것처럼 문서 및 기타 요소가 작동합니다.
+              따라서, 절대 위치 요소는 다른 요소들과 겹쳐질 수 있습니다.</p>
+            <hr>
+
+<h2>position: sticky;</h2>
+<p> <code class="w3-codespan">position: sticky;</code> 요소는 사용자의 스크롤 위치를 기준으로 배치됩니다.</p>
+<p><code class="w3-codespan">sticky</code> 요소는 스크롤 위치에 따라 <code class="w3-codespan">relative</code> 와 <code class="w3-codespan">fixed</code> 사이를 전환합니다.
+   주어진 오프셋 위치가 뷰포트에서 충족 될 때까지 상대적(position:relative)으로 배치된 다음, 주어진 위치에 "고정(stick)" 됩니다 (position:fixed 처럼).</p>
+<p>다음 예에서, 스크롤 위치에 도달하면 "sticky" 요소가 페이지 상단(<code class="w3-codespan">top: 0</code>)에 고정됩니다.</p><div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+div.sticky {<br>&nbsp; position: -webkit-sticky; /* Safari */<br>&nbsp; position: 
+  sticky;<br>&nbsp; top: 0;<br>&nbsp; background-color: green;<br>&nbsp; 
+  border: 2px solid #4CAF50;<br>}</div>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_position_sticky" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+
+            <h2>중첩 요소</h2>
+            <p>요소가 정상 흐름의 외부에 위치 될 때, 이들은 다른 요소들에 중첩 될 수있다.<br>
+              <br>
+              <code class="w3-codespan">z-index</code> 속성은 요소의 스택 순서 (어떤 요소가 앞에 오고, 또는 뒤에 오는지)을 지정합니다.<br>
+              <br>
+              요소는 positive 또는 negative 스택의 순서를 가질 수있다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> img {<br>
+                &nbsp;&nbsp;&nbsp; position: absolute;<br>
+                &nbsp;&nbsp;&nbsp; left: 0px;<br>
+                &nbsp;&nbsp;&nbsp; top: 0px;<br>
+                &nbsp;&nbsp;&nbsp; z-index: -1;<br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_zindex"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>큰 스택 순서를 갖는 요소가 낮은 스택 순서를 가진 요소의 앞에 온다.</p>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td><strong>&nbsp;Note:</strong> 두 개의 위치 요소가 지정된 z-index 없이
+                    겹치는 경우, HTML 코드의 마지막에 위치하는 요소가 위에 표시됩니다.</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <h2>이미지에 텍스트 위치시키기</h2>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="notranslate">
+                <div style="position:relative;text-align:center;"> <img src="http://www.w3schools.com/css/trolltunga.jpg"
+
+                    alt="Norway" style="width:100%;height:auto;opacity:0.3">
+                  <div style="position:absolute;bottom:8px;left:16px;font-size:18px">Bottom
+                    Left</div>
+                  <div style="position:absolute;top:8px;left:16px;font-size:18px">Top
+                    Left</div>
+                  <div style="position:absolute;top:8px;right:16px;font-size:18px">Top
+                    Right</div>
+                  <div style="position:absolute;bottom:8px;right:16px;font-size:18px">Bottom
+                    Right</div>
+                  <div style="position:absolute;left:0%;top:50%;width:100%;font-size:18px">Centered</div>
+                </div>
+              </div>
+              <p style="font-size:17px;">Try it yourself:</p>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_top_left"
+
+                class="w3-btn w3-margin-bottom">Top Left »</a> <a target="_blank"
+
+                href="http://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_top_right"
+
+                class="w3-btn w3-margin-bottom">Top Right »</a> <a target="_blank"
+
+                href="http://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_bottom_left"
+
+                class="w3-btn w3-margin-bottom">Bottom Left »</a> <a target="_blank"
+
+                href="http://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_bottom_right"
+
+                class="w3-btn w3-margin-bottom">Bottom Right »</a> <a target="_blank"
+
+                href="http://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center"
+
+                class="w3-btn w3-margin-bottom">Centered »</a> </div>
+            <hr>
+            <div class="tryit_ex"> <img src="http://www.w3schools.com/images/tryitimg.gif"
+
+                style="width:40px;height:46px" alt="Examples">
+              <h2>More Examples</h2>
+            </div>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_clip">Set
+                the shape of an element</a><br>
+              This example demonstrates how to set the shape of an element. The
+              element is clipped into this shape, and displayed.</p>
+            
+            <hr>
+            <h2>All CSS Positioning Properties</h2>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:20%">Property</th>
+                  <th style="width:55%">Description</th>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_pos_bottom.asp">bottom</a></td>
+                  <td>Sets the bottom margin edge for a positioned box</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_pos_clip.asp">clip</a></td>
+                  <td>Clips an absolutely positioned element</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_class_cursor.asp">cursor</a></td>
+                  <td>Specifies the type of cursor to be displayed</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_pos_left.asp">left</a></td>
+                  <td>Sets the left margin edge for a positioned box</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_pos_overflow.asp">overflow</a><br>
+                  </td>
+                  <td>Specifies what happens if content overflows an element's
+                    box</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_class_position.asp">position</a></td>
+                  <td>Specifies the type of positioning for an element</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_pos_right.asp">right</a></td>
+                  <td>Sets the right margin edge for a positioned box</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_pos_top.asp">top</a></td>
+                  <td>Sets the top margin edge for a positioned box</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_pos_z-index.asp">z-index</a></td>
+                  <td>Sets the stack order of an element</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <br>
+            <div class="chapter">
+             <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Display.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Float.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

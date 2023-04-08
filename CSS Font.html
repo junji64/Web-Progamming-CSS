@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>CSS Font</title>
+    <style>a.menu_html_images{font-weight:bold;}</style>
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+    <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="w3.css">
+  </head>
+  <body><br>
+    <div id="belowTopnav" style="width:auto">
+      <div id="page" style="width:auto; padding:30px; margin:10px;">
+        <div>
+          <div id="main" style="width:auto">
+            <h1>CSS <span class="color_h1">Font</span></h1>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Text.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Styling%20Links.html">Next
+                  Chapter »</a> </div>
+
+            </div>
+            <hr>
+            <p class="intro">CSS font 속성은 font family, boldness, size 와 텍스트의
+              스타일을 정의합니다.</p>
+            <hr>
+            <h2>Serif 와 Sans-serif Font의 차이</h2>
+            <img alt="Serif vs. Sans-serif" src="http://www.w3schools.com/css/serif.gif"
+
+              height="142" width="398">
+            <hr>
+            <h2>CSS Font Families</h2>
+            <p>CSS 에는 font family 이름의 두 가지 유형이 있습니다:</p>
+            <ul>
+              <li><b>generic family</b> - 비슷한 모양으로 font families 그룹 (like
+                "Serif" or "Monospace")</li>
+              <li><b>font family</b> - 특정 font family (like "Times New Roman" or
+                "Arial")</li>
+            </ul>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:20%">Generic family</th>
+                  <th style="width:30%">Font family</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>Serif</td>
+                  <td><span style="font-size:150%;font-family:Times New Roman">Times
+                      New Roman</span><br>
+                    <span style="font-size:150%;font-family:Georgia">Georgia</span></td>
+                  <td>Serif fonts have small lines at the ends on some
+                    characters</td>
+                </tr>
+                <tr>
+                  <td>Sans-serif</td>
+                  <td><span style="font-size:150%;font-family:Arial">Arial</span><br>
+                    <span style="font-size:150%;font-family:Verdana">Verdana</span></td>
+                  <td>"Sans" means without - these fonts do not have the lines
+                    at the ends of characters</td>
+                </tr>
+                <tr>
+                  <td>Monospace</td>
+                  <td><span style="font-size:150%;font-family:Courier New">Courier
+                      New</span><br>
+                    <span style="font-size:150%;font-family:Lucida Console">Lucida
+                      Console</span></td>
+                  <td>All monospace characters have the same width</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td><b>&nbsp;Note:</b> 컴퓨터 화면에서는 sans-serif 글꼴이 serif 글꼴들 보다 읽기 쉽다.&nbsp; </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <hr>
+            <h2>Font Family</h2>
+            <p>텍스트의 font family 는 font-family 의 속성으로 설정합니다.</p>
+            <p>font-family 속성은 "대체(fallback)"시스템과 같은 여러 가지 글꼴 이름을 유지해야 합니다.
+              브라우저가 첫번째 폰트를 지원하지 않는 경우, 다음 폰트를 시도하게 됩니다.</p>
+            <p>원하는 글꼴로 시작하고, 다른 글꼴을 사용할 수 없는 경우, 브라우저가 generic family에서 유사한 글꼴을 선택할 수 있도록, generic family로 종료합니다.</p>
+            <p><b>Note</b>: 글꼴 패밀리의 이름이 한 단어 이상이면, 다음 처럼 따옴표로 묶어야합니다: "Times New Roman".</p>
+            <p>하나 이상의 font family은 쉼표로 구분된 목록으로 지정됩니다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p
+                </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-family:</span><span
+
+                  class="highVAL"> "Times New Roman", Times, serif;</span><br>
+                } </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_font-family"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>For more commonly used font combinations, look at our <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">Web
+                Safe Font Combinations</a>.</p>
+            <hr>
+            <h2>Font Style</h2>
+            <p>The font-style 속성은 주로 italic 텍스트를 지정하는 데 사용됩니다. </p>
+            <p>이 속성은 다음과 같은 세 가지 값이 있습니다:</p>
+            <ul>
+              <li>normal - 텍스트가 정상적으로 표시됩니다.</li>
+              <li>italic - 텍스트는 이탤릭체로 표시됩니다.</li>
+              <li>oblique - 텍스트가 "기울어집니다"( oblique는 italic 꼴과 매우 유사하지만 덜 지원됨)</li>
+            </ul>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">p.normal
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-style:</span><span
+
+                  class="highVAL"> normal;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">p.italic </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-style:</span><span
+
+                  class="highVAL"> italic;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">p.oblique </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-style:</span><span
+
+                  class="highVAL"> oblique;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_font-style"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>Font Size</h2>
+            <p>font-size 속성은 텍스트의 크기를 설정합니다.</p>
+            <p>텍스트 크기를 관리 할 수​​ 있다는 것은 웹 디자인에서 중요하다. 그러나 단락을 제목처럼, 또는 제목을 단락처럼
+              보이게 글꼴 크기 조정을 사용하면 안된다.</p>
+            <p>항상 적절한 HTML 태그를 사용하시오 : 제목을 위해서는 &lt;h1&gt; - &lt;h6&gt; 를, 단락을
+              위해서는 &lt;p&gt;를.</p>
+            <p>font-size 값은 절대 또는 상대 크기가 있습니다.</p>
+            <p>절대적 크기:</p>
+            <ul>
+              <li>지정된 크기로 텍스트를 설정합니다</li>
+              <li>사용자가 모든 브라우저에서 텍스트 크기를 변경할 수 없습니다 </li>
+              <li>출력의 물리적 크기가 알려진 때 절대 크기는 유용</li>
+            </ul>
+            <p>상대적 크기:</p>
+            <ul>
+              <li>주변 요소에 상대적인 크기를 설정합니다</li>
+              <li>사용자가 브라우저에서 텍스트 크기를 변경할 수 있습니다</li>
+            </ul>
+            <br>
+            <table class="lamp">
+              <tbody>
+                <tr>
+                  <th style="width:34px"><img src="http://www.w3schools.com/images/lamp.jpg"
+
+                      alt="Note" style="height:32px;width:32px"></th>
+                  <td><b>&nbsp;Note:</b> 글꼴 크기를 지정하지 않으면 일반 텍스트의 기본 크기는 단락과 같은 크기인 16px입니다. (16px=1em).</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <hr>
+            <h2>픽셀로 Font Size 설정</h2>
+            <p>픽셀로 텍스트 크기를 설정하면, 텍스트 크기를 완벽하게 제어 할 수 있다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">h1
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-size:</span><span
+
+                  class="highVAL"> 40px;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">h2 </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-size:</span><span
+
+                  class="highVAL"> 30px;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">p </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-size:</span><span
+
+                  class="highVAL"> 14px;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_font-size_px"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>The example above allows Internet Explorer 9, Firefox, Chrome,
+              Opera, and Safari to resize the text.</p>
+            <p><b>Note:</b> The example above does not work in IE, prior version
+              9.</p>
+            <p>The text can be resized in all browsers using the zoom tool
+              (however, this resizes the entire page, not just the text).</p>
+            <hr>
+            <h2>Em으로 Font Size 설정 </h2>
+            <p>인터넷 익스플로러의 이전 버전과의 크기 조정 문제를 피하려고 많은 개발자들이 px 대신 em 을 사용합니다.</p>
+            em 크기 단위는 W3C에 의해 권장됩니다.
+            <p>1em 은 현재의 글꼴 크기와 동일합니다. 브라우저의 기본 텍스트 크기가 16px입니다. 그래서, 1em 기본 크기는
+              16px입니다. </p>
+            <p>크기는 다음 공식을 사용하여 pixel 로부터 em 으로 계산 될 수있다 : <i>pixels</i>/16=<i>em</i>&nbsp;</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">h1
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-size:</span><span
+
+                  class="highVAL"> 2.5em;</span> <span class="highCOM">/*
+                  40px/16=2.5em */</span><br>
+                }<br>
+                <br>
+                <span class="highELE">h2 </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-size:</span><span
+
+                  class="highVAL"> 1.875em;</span> <span class="highCOM">/*
+                  30px/16=1.875em */</span><br>
+                }<br>
+                <br>
+                <span class="highELE">p </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-size:</span><span
+
+                  class="highVAL"> 0.875em;</span> <span class="highCOM">/*
+                  14px/16=0.875em */</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_font-size_em"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>위의 예에서, em 단위의 텍스트 크기는 이전의 pixel 단위의 것과 같다. 그러나, em 크기는 모든
+              브라우저에서의 텍스트 크기를 조정할 수 있게 해준다.&nbsp; </p>
+
+            <hr>
+            <h2>Percent 와 Em 결합 사용하기</h2>
+            <p>모든 브라우저에서 작동하는 솔루션은 &lt;body&gt; 요소에서 기본 글꼴 크기를 %로 설정하는 것입니다:</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">body
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-size:</span><span
+
+                  class="highVAL"> 100%;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">h1 </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-size:</span><span
+
+                  class="highVAL"> 2.5em;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">h2 </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-size:</span><span
+
+                  class="highVAL"> 1.875em;</span><br>
+                }<br>
+                <br>
+                <span class="highELE">p </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">font-size:</span><span
+
+                  class="highVAL"> 0.875em;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_font-size_percent_em"
+
+                class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <p>이 코드는 잘 동작된다. 모든 브라우저에서 같은 텍스트 크기를 보이며, 모든 브라우저에서 모든 텍스트의 줌과 크기
+              변경이 허용된다!</p>
+            <hr>
+            <div class="tryit_ex"> <img src="http://www.w3schools.com/images/tryitimg.gif"
+
+                style="width:40px;height:46px" alt="Examples">
+              <h2>More Examples</h2>
+            </div>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_font-weight">Set
+                the boldness of the font</a><br>
+              This example demonstrates how to set the boldness of a font.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_font-variant">Set
+                the variant of the font</a><br>
+              This example demonstrates how to set the variant of a font.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_font">All
+                the font properties in one declaration</a><br>
+              This example demonstrates how to use the shorthand property for
+              setting all of the font properties in one declaration.</p>
+            <hr style="box-sizing: content-box; height: 0px; margin-top: 20px; margin-bottom: 20px; border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.1428565979004px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+            <h2 style="box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 20px; margin-bottom: 10px; font-size: 30px; font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">Test
+              Yourself with Exercises!</h2>
+            <p> <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_font1"
+
+                target="_blank">Exercise 1 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_font2"
+
+                target="_blank">Exercise 2 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_font3"
+
+                target="_blank">Exercise 3 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_font4"
+
+                target="_blank">Exercise 4 »</a>&nbsp; <a class="w3-btn" href="http://www.w3schools.com/css/exercise.asp?filename=exercise_font5"
+
+                target="_blank">Exercise 5 »</a> </p>
+            <hr>
+            <h2>All CSS Font Properties</h2>
+            <table class="w3-table-all notranslate ">
+              <tbody>
+                <tr>
+                  <th style="width:25%">Property</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_font_font.asp">font</a></td>
+                  <td>Sets all the font properties in one declaration</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_font_font-family.asp">font-family</a></td>
+                  <td>Specifies the font family for text</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_font_font-size.asp">font-size</a></td>
+                  <td>Specifies the font size of text</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_font_font-style.asp">font-style</a></td>
+                  <td>Specifies the font style for text</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_font_font-variant.asp">font-variant</a></td>
+                  <td>Specifies whether or not a text should be displayed in a
+                    small-caps font</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_font_weight.asp">font-weight</a></td>
+                  <td>Specifies the weight of a font</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <br>
+            <div class="chapter">
+              <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Text.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Styling%20Links.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

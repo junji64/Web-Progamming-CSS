@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+              <html lang="en-US">
+                <head>
+                      <meta content="text/html; charset=utf-8" http-equiv="content-type">
+                      <title>CSS 위치잡기(Positioning)</title>
+                      <style>a.menu_html_images{font-weight:bold;}</style>
+                      <meta name="viewport" content="width=device-width">
+                      <meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+                      <meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+                      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+                      <link rel="stylesheet" href="w3.css">
+                  <script>
+                    function removeElement(numId) {
+                      document.getElementById(numId).style.display="none";
+                    }
+                  </script>
+                  
+                  <style>
+.imgbox
+{
+float:left;
+text-align:center;
+width:120px;
+height:120px;
+border:1px solid gray;
+margin:4px;
+margin-bottom:8px;
+padding:0px;
+}
+.thumbnail 
+{
+width:110px;
+height:90px;
+margin:3px;
+}
+.box
+{
+width:110px;
+padding:0px;
+}
+</style> <style>
+.floatl:after {
+font-weight: bold;
+content: 'Float Left';
+color:white;
+}
+.floatr:after  {
+font-weight:bold;
+content: 'Float Right';
+color:white;
+}
+@media only screen and (max-width: 500px){
+ .floatl:after  {
+content: 'Left';
+  }
+ .floatr:after  {
+content: 'Right';
+  }
+}
+</style>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+                  <link rel="stylesheet" type="text/css" href="http://www.w3schools.com/stdtheme.css">
+                </head>
+                <body><br>
+                  <div id="belowTopnav" style="width:auto">
+                    <div id="page" style="width:auto; padding:30px; margin:10px;">
+                      <div>
+                        <div id="main" style="width:auto">
+                          <h1>CSS 배치 - <span class="color_h1">float 와 clear</span></h1>
+                          <div class="chapter">
+                            <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Positioning.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Combinators.html">Next
+                  Chapter »</a> </div>
+
+                          </div>
+                          <hr>
+                                      <p style="clear:both">CSS <code class="w3-codespan">float</code>는 다른 요소가 주위에 배치 할 수 있도록 주어진 요소를
+              왼쪽 또는 오른쪽으로 밀어 놓는 것을 말합니다.<br>
+              <br>
+              <p style="clear:both">CSS <code class="w3-codespan">float</code>는 주로 이미지에 자주 사용되지만 레이아웃 작업을 할 때 또한 유용합니다.</p>
+
+<div style="background-color:#2196F3;padding:16px;float:left;width:30%;opacity:0.85;text-align:center;">
+<span class="floatl"></span>
+</div>
+<div style="background-color:#F44336;padding:16px;float:right;width:30%;opacity:0.85;text-align:center;">
+<span class="floatr"></span>
+</div>
+<br><br>
+<hr style="clear:both;margin-bottom:15px;margin-top:32px">
+           <h2>float 속성</h2>
+<p> <code class="w3-codespan">float</code> 속성은 다음 중 하나로 사용될 수 있다.:</p>
+<ul>
+  <li>left - The element floats to the left of its container</li>
+  <li>right - The element floats to the right of its container</li>
+  <li>none - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+  <li>inherit - The element inherits the float value of its parent</li>
+</ul>
+            <hr><h2>Example - float: right;</h2>
+<p>다음 예제는 이미지가 텍스트에서 <strong>오른쪽</strong>으로 이동되도록 지정합니다.:</p>
+<div class="w3-clear w3-border w3-padding">
+<p><img src="http://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;float:right;margin-left:15px;margin-bottom:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. <span class="w3-hide-small">Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...</span></p>
+</div>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+img {<br>&nbsp; float: right;<br>}</div>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_layout_float" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Example - float: left;</h2>
+<p>다음 예제는 이미지가 텍스트에서 <strong>왼쪽</strong>으로 이동되도록 지정합니다.:</p>
+<div class="w3-clear w3-border w3-padding">
+<p><img src="http://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;float:left;margin-right:15px;margin-bottom:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. <span class="w3-hide-small">Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...</span></p>
+</div>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+img {<br>&nbsp; float: left;<br>}</div>
+<a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_layout_float2" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+            <h2>Floating Elements Next to Each Other</h2>
+            <p>만약 몇 몇 플로팅된 요소들이 함께 놓인다면, 공간이 있는 경우, 서로 옆으로 플로팅 된다.<br>
+              <br>
+              여기에서는 플로트 속성을 사용하여 이미지 갤러리를 만듬니다 :</p>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh">
+                <div class="example_code notranslate"> <span class="highELE" style="box-sizing: border-box; color: rgb(165, 42, 42); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">.thumbnail<span
+
+class="Apple-converted-space">&nbsp;</span></span><span style="color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">{</span><br
+
+style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                  <span style="color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;<span
+
+class="Apple-converted-space">&nbsp;</span></span><span class="highATT" style="box-sizing: border-box; color: rgb(220, 20, 60); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">float:</span><span
+
+class="highVAL" style="box-sizing: border-box; color: rgb(0, 0, 205); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><span
+
+class="Apple-converted-space">&nbsp;</span>left;</span><br style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                  <span style="color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;<span
+
+class="Apple-converted-space">&nbsp;</span></span><span class="highATT" style="box-sizing: border-box; color: rgb(220, 20, 60); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">width:</span><span
+
+class="highVAL" style="box-sizing: border-box; color: rgb(0, 0, 205); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><span
+
+class="Apple-converted-space">&nbsp;</span>110px;</span><br style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                  <span style="color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;<span
+
+class="Apple-converted-space">&nbsp;</span></span><span class="highATT" style="box-sizing: border-box; color: rgb(220, 20, 60); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">height:</span><span
+
+class="highVAL" style="box-sizing: border-box; color: rgb(0, 0, 205); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><span
+
+class="Apple-converted-space">&nbsp;</span>90px;</span><br style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                  <span style="color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;<span
+
+class="Apple-converted-space">&nbsp;</span></span><span class="highATT" style="box-sizing: border-box; color: rgb(220, 20, 60); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">margin:</span><span
+
+class="highVAL" style="box-sizing: border-box; color: rgb(0, 0, 205); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><span
+
+class="Apple-converted-space">&nbsp;</span>5px;</span><br style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+                  <span style="color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.25px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255);">}</span></div>
+              </div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_float_elements"
+
+class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <h2>플로팅(Float) 해제 - Clear 속성 사용</h2>
+            <p>플로팅 요소 다음의 요소는 주위를 흘러 다닐 것이다. 이 문제를 방지하려면, clear 속성을 사용합니다.<br>
+              <br>
+              clear 속성은 요소 옆에 다른 플로팅 요소를&nbsp; 허용하지 않음을 지정합니다.<br>
+              <br>
+              clear 속성을 사용하여 이미지 갤러리에 텍스트 줄을 추가한 예입니다. :</p>
+            <br>
+            <div class="w3-example">
+              <h3>Example</h3>
+              <div class="w3-code notranslate cssHigh"> <span class="highELE">div
+                  </span>{<br>
+                &nbsp;&nbsp;&nbsp; <span class="highATT">clear:</span><span class="highVAL">
+                  left;</span><br>
+                }</div>
+              <a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_layout_clear"
+
+class="w3-btn w3-margin-bottom">Try it yourself »</a> </div>
+            <br>
+            <hr>
+            <div class="tryit_ex"> <img src="http://www.w3schools.com/images/tryitimg.gif"
+
+style="width:40px;height:46px" alt="Examples">
+              <h2>More Examples</h2>
+            </div>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_float2">An
+                image with border and margins that floats to the right in a
+                paragraph</a><br>
+              Let an image float to the right in a paragraph. Add border and
+              margins to the image.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_float3">An
+                image with a caption that floats to the right</a><br>
+              Let an image with a caption float to the right.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_float4">Let
+                the first letter of a paragraph float to the left</a><br>
+              Let the first letter of a paragraph float to the left and style
+              the letter.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_float5">Creating
+                a horizontal menu</a><br>
+              Use float with a list of hyperlinks to create a horizontal menu.</p>
+            <p><a target="_blank" href="http://www.w3schools.com/css/tryit.asp?filename=trycss_float6">Creating
+                a homepage without tables</a><br>
+              Use float to create a homepage with a header, footer, left content
+              and main content.</p>
+            <hr>
+            <h2>All CSS Float Properties</h2>
+            <table class="w3-table-all notranslate">
+              <tbody>
+                <tr>
+                  <th style="width:20%">Property</th>
+                  <th style="width:65%">Description</th>
+                  <th>Values</th>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_class_clear.asp">clear</a></td>
+                  <td>Specifies which sides of an element where other floating
+                    elements are not allowed</td>
+                  <td>left<br>
+                    right<br>
+                    both<br>
+                    none<br>
+                    inherit</td>
+                </tr>
+                <tr>
+                  <td><a href="http://www.w3schools.com/cssref/pr_class_float.asp">float</a></td>
+                  <td>Specifies whether or not a box should float</td>
+                  <td>left<br>
+                    right<br>
+                    none<br>
+                    inherit</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <br>
+            <div class="chapter">
+                            <div class="w3-clear nextprev"> <a class="w3-left w3-btn" href="CSS%20Positioning.html">«
+                  Previous</a> <a class="w3-right w3-btn" href="CSS%20Combinators.html">Next
+                  Chapter »</a> </div>
+            </div>
+            <hr><br>
+          </div>
+        </div>
+      </div>
+    </div>
+</body></html>
